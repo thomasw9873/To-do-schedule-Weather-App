@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css" />
+<link rel='stylesheet' href='style.css'>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do Schedule & Weather App</title>
+</head>
+
+<body>
+    <!-- Nav Header Bootstrap -->
+    <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">To Do Schedule & Weather App.JS</a>
+        </div>
+    </nav>
+
+    <!-- 1st Header -->
+    <div class="container searchContainer">
+        <div class="search card card-body">
+            <h1>Get The Weather For a Location</h1>
+            <p class="lead">Enter Your Location</p>
+            <input type="text" id="searchUser" class="form-control" placeholder="Location">
+        </div>
+        <br>
+        <div id="profile"></div>
+    </div>
+    <div class="container text-center mt-2">
+        <button class="btn btn-primary" id="submit">Submit</button>
+    </div>
+
+    <div id="content"></div>
+
+    <br>
+    <br>
+
+    <main>
+
+        <!-- 2nd Header -->
+        <div id='header'>
+            <h1>To Do or Not To Do</h1>
+            <h2 class='tagline'>(your priorities at a glance)</h2>
+        </div>
+
+        <!-- App Container -->
+        <div class='container'>
+
+            <!-- To Do Section -->
+            <div class='week'>
+                <div class='row secondary-background'>
+                    <div class='day square'>
+                        <h3>MON</h3>
+                    </div>
+                    <div class='task square'>
+                        <textarea id="monTask1" cols="20" name="task" rows="5"
+                            placeholder="Insert info about your week here :->"></textarea>
+                    </div>
+                    <div class='task square'>
+                        <textarea id="monTask2" cols="20" name="task" rows="5" placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'>
+                        <textarea id="monTask2" cols="20" name="task" rows="5" placeholder="To do task..."></textarea>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='day square'>
+                        <h3>TUE</h3>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                </div>
+                <div class='row secondary-background'>
+                    <div class='day square'>
+                        <h3>WED</h3>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='day square'>
+                        <h3>THU</h3>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                </div>
+                <div class='row secondary-background'>
+                    <div class='day square'>
+                        <h3>FRI</h3>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                </div>
+                <div class='row secondary-background'>
+                    <div class='day square'>
+                        <h3>SAT</h3>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                </div>
+                <div class='row secondary-background'>
+                    <div class='day square'>
+                        <h3>SUN</h3>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                    <div class='task square'><textarea id="monTask2" cols="20" name="task" rows="5"
+                            placeholder="To do task..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reminders Section -->
+            <div class='reminders'>
+                <h3>Reminders</h3>
+            </div>
+        </div>
+
+
+    </main>
+    <!-- Footer -->
+    <footer class="mt-5 p-3 text-center bg-light">
+        To Do Schedule & Weather App &copy;
+    </footer>
+</body>
+<script src="fetch.js"></script>
+<script src="ui.js"></script>
+<script src="app.js"></script>
+
+</html>
+
+<!-- UPGRADES
+1. Change to Degrees Celsius
+1. Reminder Section should act as a local storage section
+ -->
